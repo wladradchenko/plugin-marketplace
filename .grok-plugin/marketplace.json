@@ -12,7 +12,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/vercel/vercel-plugin.git",
-        "sha": "c632a50838a47a639a160baff8411eb9c6af22bf"
+        "sha": "f42fa617f208b3b192c9ec636cba1fb025924407"
       },
       "homepage": "https://github.com/vercel/vercel-plugin",
       "keywords": ["vercel", "vercel deploy", "deploy to vercel"],
@@ -25,7 +25,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/getsentry/plugin-grok.git",
-        "sha": "91e0cb6c79730e02bcf8f7dbcb1795e677fe8cc5"
+        "sha": "b0569b6255e7e02a5d9e164d32df3e969688cada"
       },
       "homepage": "https://github.com/getsentry/sentry-for-ai",
       "keywords": ["sentry"],
@@ -116,7 +116,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/axiomhq/skills.git",
-        "sha": "0e98ebaeec76a70c8fda9a7737605800c2f1245d"
+        "sha": "8f26649612042662c1ea8318ff27a49a7c24531f"
       },
       "homepage": "https://github.com/axiomhq/skills",
       "keywords": ["axiom"],
@@ -154,7 +154,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/netlify/context-and-tools.git",
-        "sha": "c840ee705c1fd1a3b74378a04b9770b3090a4122"
+        "sha": "47d1f147cc134043593574b69e6483e1f6ae16ad"
       },
       "homepage": "https://github.com/netlify/context-and-tools",
       "keywords": ["netlify", "netlify deploy", "deploy to netlify"],
@@ -167,7 +167,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/firecrawl/firecrawl-grok-plugin.git",
-        "sha": "7100b62d09a40673fe1688175431b1baff7ed262"
+        "sha": "a6af1882b1839d57d46ef20f5d3c54a10f3ec448"
       },
       "homepage": "https://github.com/firecrawl/firecrawl-grok-plugin",
       "keywords": ["firecrawl", "fire crawl"],
@@ -180,7 +180,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/figma/mcp-server-guide.git",
-        "sha": "2c8af036a758af150ec0244489f6fb3d12e394db"
+        "sha": "f0493295acf5f7cbdebcbcc483c06de814420cb1"
       },
       "homepage": "https://github.com/figma/mcp-server-guide",
       "keywords": ["figma", "figma mcp"],
@@ -246,7 +246,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/stripe/ai.git",
-        "sha": "a188b0d644166d57b93dc6fb338a0e2e8c37b5fc",
+        "sha": "e4856d5f871fb9c347db2ce8e5a96f6513393d11",
         "path": "providers/grok/plugin"
       },
       "homepage": "https://github.com/stripe/ai",
@@ -287,7 +287,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/cursor/plugins.git",
-        "sha": "fae2c6ed95821bd85f614a73e4842e13229fa5e5",
+        "sha": "df581122cde17e6e27686b5a448bde23e4ad4318",
         "path": "pstack"
       },
       "homepage": "https://github.com/cursor/plugins/tree/main/pstack",
@@ -365,7 +365,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/GoogleChrome/modern-web-guidance.git",
-        "sha": "84ae7251ee919239d5ea85aef25897983f26601e"
+        "sha": "650eb83619134adb947b1ee8755e6511270bc444"
       },
       "homepage": "https://github.com/GoogleChrome/modern-web-guidance",
       "keywords": ["modern web", "web best practices", "web guidance"]
@@ -390,7 +390,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/Unity-Technologies/unity-agent-plugin.git",
-        "sha": "9c01e8d21cfefa28bc0a18f92ec910a738a1b1bc"
+        "sha": "de668bfd2e4ece0613c331e653c8c48b03e7238d"
       },
       "homepage": "https://github.com/Unity-Technologies/unity-agent-plugin",
       "keywords": ["unity", "unity engine", "unity editor", "unity 6", "unity cli", "unity plugin", "unity game development", "ui toolkit", "shader graph", "unity iap", "levelplay"],
@@ -407,6 +407,18 @@
       "homepage": "https://wunjo.online/product/design#mcp",
       "keywords": ["wunjo", "wunjo design", "wunjo mcp"],
       "domains": ["wunjo.online", "mcp.wunjo.online", "app.wunjo.online"]
+    },
+    {
+      "name": "calcom",
+      "description": "Cal.com scheduling integration (hosted MCP server + skill). Check availability, book, reschedule and cancel meetings, manage event types, schedules, attendees and team memberships, and reach any Cal.com API v2 operation. Sign in with your Cal.com account; no API key needed.",
+      "category": "productivity",
+      "source": {
+        "type": "local",
+        "path": "./external_plugins/calcom"
+      },
+      "homepage": "https://cal.com/docs/mcp-server",
+      "keywords": ["cal.com", "calcom", "cal.com mcp", "cal.com scheduling", "cal.com booking"],
+      "domains": ["cal.com", "app.cal.com", "mcp.cal.com", "api.cal.com"]
     }
   ]
 }

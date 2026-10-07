@@ -2,8 +2,8 @@
   "version": 1,
   "plugins": {
     "axiom": {
-      "sha": "0e98ebaeec76a70c8fda9a7737605800c2f1245d",
-      "version": "1.0.0",
+      "sha": "8f26649612042662c1ea8318ff27a49a7c24531f",
+      "version": "1.1.0",
       "components": {
         "mcpServers": [
           {
@@ -29,16 +29,16 @@
             "description": "Analyzes Axiom query patterns to find unused data, then builds dashboards and monitors for cost optimization. Use when…"
           },
           {
+            "name": "metrics-chart",
+            "description": "Render Axiom metrics query results (application/vnd.metrics.v3+json) as line charts. Zero-dependency Unicode/ASCII by d…"
+          },
+          {
             "name": "query-metrics",
             "description": "Runs metrics queries against Axiom MetricsDB via scripts. Discovers available metrics, tags, and tag values. Use when a…"
           },
           {
             "name": "spl-to-apl",
             "description": "Translates Splunk SPL queries to Axiom APL. Provides command mappings, function equivalents, and syntax transformations…"
-          },
-          {
-            "name": "writing-evals",
-            "description": "Scaffolds evaluation suites for the Axiom AI SDK. Generates eval files, scorers, flag schemas, and config from natural-…"
           }
         ]
       }
@@ -97,6 +97,23 @@
           {
             "name": "bruin-api-integration",
             "description": "Help a client build, debug, or extend an integration with the Bruin Public API, MetTel's REST API for tickets, inventor…"
+          }
+        ]
+      }
+    },
+    "calcom": {
+      "version": "1.0.0",
+      "components": {
+        "mcpServers": [
+          {
+            "name": "calcom",
+            "description": "http"
+          }
+        ],
+        "skills": [
+          {
+            "name": "calcom",
+            "description": "Work with Cal.com scheduling through the Cal.com MCP server: check availability, create, reschedule, cancel and confirm…"
           }
         ]
       }
@@ -260,8 +277,8 @@
       }
     },
     "figma": {
-      "sha": "2c8af036a758af150ec0244489f6fb3d12e394db",
-      "version": "2.2.124",
+      "sha": "f0493295acf5f7cbdebcbcc483c06de814420cb1",
+      "version": "2.2.127",
       "components": {
         "mcpServers": [
           {
@@ -330,8 +347,8 @@
       }
     },
     "firecrawl": {
-      "sha": "7100b62d09a40673fe1688175431b1baff7ed262",
-      "version": "1.2.0",
+      "sha": "a6af1882b1839d57d46ef20f5d3c54a10f3ec448",
+      "version": "1.3.2",
       "components": {
         "commands": [
           {
@@ -353,6 +370,10 @@
           {
             "name": "firecrawl-agent",
             "description": "AI-powered autonomous data extraction that navigates complex sites and returns structured JSON. Use this skill when the…"
+          },
+          {
+            "name": "firecrawl-alexandria",
+            "description": "Get structured data from catalogued providers instead of scraping pages. Firecrawl Alexandria is a library of official…"
           },
           {
             "name": "firecrawl-crawl",
@@ -406,8 +427,8 @@
       }
     },
     "modern-web-guidance": {
-      "sha": "84ae7251ee919239d5ea85aef25897983f26601e",
-      "version": "0.0.191",
+      "sha": "650eb83619134adb947b1ee8755e6511270bc444",
+      "version": "0.0.192",
       "components": {
         "skills": [
           {
@@ -527,8 +548,8 @@
       }
     },
     "netlify": {
-      "sha": "c840ee705c1fd1a3b74378a04b9770b3090a4122",
-      "version": "1.5.2",
+      "sha": "47d1f147cc134043593574b69e6483e1f6ae16ad",
+      "version": "1.6.0",
       "components": {
         "mcpServers": [
           {
@@ -630,7 +651,7 @@
       }
     },
     "pstack": {
-      "sha": "fae2c6ed95821bd85f614a73e4842e13229fa5e5",
+      "sha": "df581122cde17e6e27686b5a448bde23e4ad4318",
       "components": {
         "agents": [
           {
@@ -639,7 +660,7 @@
           },
           {
             "name": "poteto-agent",
-            "description": "Routing target for `/poteto-mode` and any request for poteto's style. Resume an existing `poteto-agent` for the convers…"
+            "description": "Routing target for `/poteto-mode` and any request for poteto's style. Spawn a fresh `poteto-agent` for each new task, a…"
           }
         ],
         "skills": [
@@ -664,12 +685,20 @@
             "description": "Use for \\\"automate me\\\", \\\"create/update/refresh my -mode skill\\\", \\\"turn/capture my preferences or working style into…"
           },
           {
+            "name": "benchmark-checklist",
+            "description": "Vet a perf measurement (limiter, tuning, limits, errors, repeatability, relevance, and whether the work happened) befor…"
+          },
+          {
             "name": "blast-radius",
             "description": "Find what a change could break somewhere else before it ships, beyond the diff, and prove the one fact it's safe becaus…"
           },
           {
             "name": "bro",
             "description": "Restate the last message in plain human language, with no jargon."
+          },
+          {
+            "name": "correct",
+            "description": "Find the mistakes agents keep repeating in this repo and make each one impossible. Try architecture first, then types,…"
           },
           {
             "name": "create-verification-skill",
@@ -696,6 +725,10 @@
             "description": "Spawn Comment Sicko, fix accepted findings, and offer encodings for claimed constraints."
           },
           {
+            "name": "poteto-help",
+            "description": "Guides users through pstack setup, /poteto-mode, and picking the skill, playbook, or principle for a task. Type /poteto…"
+          },
+          {
             "name": "principle-attack-the-premise",
             "description": "Apply when two or more fixes that share one premise have failed the same gate. Take a census of which actors hold the i…"
           },
@@ -718,6 +751,10 @@
           {
             "name": "principle-experience-first",
             "description": "Apply when product, UX, or feature-scope tradeoffs come up. Choose user delight over implementation convenience; ship f…"
+          },
+          {
+            "name": "principle-explain-the-number",
+            "description": "Apply before you trust, report, or act on a number you measured: a speedup, a regression, a throughput, a latency, or a…"
           },
           {
             "name": "principle-fix-root-causes",
@@ -826,10 +863,6 @@
           {
             "name": "unslop",
             "description": "Cut AI tells from any writing. Must always apply."
-          },
-          {
-            "name": "why",
-            "description": "Use for 'why does X work this way', 'why we picked Y', design rationale, regressions, postmortems, or data-backed thres…"
           }
         ]
       }
@@ -871,8 +904,8 @@
       }
     },
     "sentry": {
-      "sha": "91e0cb6c79730e02bcf8f7dbcb1795e677fe8cc5",
-      "version": "1.4.0",
+      "sha": "b0569b6255e7e02a5d9e164d32df3e969688cada",
+      "version": "1.4.3",
       "components": {
         "mcpServers": [
           {
@@ -917,8 +950,8 @@
       }
     },
     "stripe": {
-      "sha": "a188b0d644166d57b93dc6fb338a0e2e8c37b5fc",
-      "version": "0.9.4",
+      "sha": "e4856d5f871fb9c347db2ce8e5a96f6513393d11",
+      "version": "0.9.10",
       "components": {
         "agents": [
           {
@@ -957,7 +990,7 @@
           },
           {
             "name": "stripe-apps",
-            "description": "Use when building, modifying, or reviewing a Stripe App — or when the user describes something that implies one (e.g. \"…"
+            "description": "Build, modify, or review Stripe Apps and extensions using the relevant documentation and reference guides. Use for cust…"
           },
           {
             "name": "stripe-best-practices",
@@ -1163,8 +1196,8 @@
       }
     },
     "unity": {
-      "sha": "9c01e8d21cfefa28bc0a18f92ec910a738a1b1bc",
-      "version": "0.1.6-beta",
+      "sha": "de668bfd2e4ece0613c331e653c8c48b03e7238d",
+      "version": "0.1.8-beta",
       "components": {
         "skills": [
           {
@@ -1303,8 +1336,8 @@
       }
     },
     "vercel": {
-      "sha": "c632a50838a47a639a160baff8411eb9c6af22bf",
-      "version": "0.51.0",
+      "sha": "f42fa617f208b3b192c9ec636cba1fb025924407",
+      "version": "0.54.0",
       "components": {
         "agents": [
           {
@@ -1368,7 +1401,7 @@
           },
           {
             "name": "ai-gateway",
-            "description": "Vercel AI Gateway guidance for setup, model discovery, authentication, routing, fallbacks, BYOK, budgets, spend reporti…"
+            "description": "Vercel AI Gateway guidance for setup, model discovery, authentication, routing, fallbacks, virtual models, evaluation m…"
           },
           {
             "name": "ai-sdk",
@@ -1376,7 +1409,7 @@
           },
           {
             "name": "auth",
-            "description": "Authentication integration guidance — Clerk (native Vercel Marketplace), Descope, and Auth0 setup for Next.js applicati…"
+            "description": "Authentication integration guidance — Clerk (native Vercel Marketplace), Better Auth, Descope, and Auth0 setup for Next…"
           },
           {
             "name": "bootstrap",
@@ -1423,6 +1456,10 @@
             "description": "Set up and use feature flags and A/B tests with the Flags SDK (`flags` npm package) and Vercel Flags. Use when installi…"
           },
           {
+            "name": "is-agentic",
+            "description": "Score how ready a website, domain, or public MCP endpoint is for AI agents using Is Agentic, and read or act on the res…"
+          },
+          {
             "name": "knowledge-update",
             "description": "Corrects outdated LLM knowledge about the Vercel platform and introduces new products. Injected at session start."
           },
@@ -1433,22 +1470,6 @@
           {
             "name": "microfrontends",
             "description": "Guide for building, configuring, and deploying microfrontends on Vercel. Use this skill when the user mentions microfro…"
-          },
-          {
-            "name": "next-cache-components",
-            "description": "Next.js 16 Cache Components guidance — PPR, use cache directive, cacheLife, cacheTag, updateTag, and migration from uns…"
-          },
-          {
-            "name": "next-forge",
-            "description": "next-forge expert guidance — production-grade Turborepo monorepo SaaS starter by Vercel. Use when working in a next-for…"
-          },
-          {
-            "name": "next-upgrade",
-            "description": "Upgrade Next.js to the latest version following official migration guides and codemods. Use when upgrading Next.js vers…"
-          },
-          {
-            "name": "nextjs",
-            "description": "Next.js App Router expert guidance. Use when building, debugging, or architecting Next.js applications — routing, Serve…"
           },
           {
             "name": "queues",
@@ -1465,14 +1486,6 @@
           {
             "name": "runtime-cache",
             "description": "Vercel Runtime Cache API guidance — ephemeral per-region key-value cache with tag-based invalidation. Shared across Fun…"
-          },
-          {
-            "name": "shadcn",
-            "description": "shadcn/ui expert guidance — CLI, component installation, composition patterns, custom registries, theming, Tailwind CSS…"
-          },
-          {
-            "name": "turbopack",
-            "description": "Turbopack expert guidance. Use when configuring the Next.js bundler, optimizing HMR, debugging build issues, or underst…"
           },
           {
             "name": "vercel-agent",
